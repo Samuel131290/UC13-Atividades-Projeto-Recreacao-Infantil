@@ -360,6 +360,7 @@ body {
         text-align: center;
         position: static; /* Remove a posição absoluta em telas menores */
         margin-top: 1rem; /* Adiciona uma margem superior para separar os links do conteúdo acima */
+        margin-left: 1rem;
     }
     
     .links a {

@@ -331,6 +331,7 @@ label.tipoServico {
         text-align: center;
         position: static;
         margin-top: 1rem;
+        margin-left: 1rem;
     }
     
     .links a {
