@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="css/index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="icon" href="icon/logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="links">
+            <a class="link1" href="galeria.html">GALERIA</a>
+            <a class="link2" href="orcamento.html">ORÇAMENTO</a>
+        </div>
+        <img class="logo" src="icon/logo.png" alt="Logo" width="65" height="47">
+    </header>
+
+    <div>
+        <h1 class="title" id="title-colorido">Kids Party</h1>
+        <script>
+            const container = document.getElementById('title-colorido');
+            container.innerHTML = container.textContent.replace(/\S/g, "<span>$&</span>"); // O script JavaScript agora usa innerHTML para substituir o conteúdo do <h1> pelo mesmo texto, mas envolto em <span> para cada letra ($& representa cada caractere).
+        </script>
+
+        <p class="descricao">
+            Bem-vindo ao Kids Party, onde a diversão é garantida para crianças de todas as idades! Explore uma
+            variedade de atividades emocionantes, desde recreação infantil com gincanas e pintura facial, até opções
+            para
+            adolescentes com jogos de quadra e desafios de raciocínio. Nossa missão é criar momentos inesquecíveis
+            através de jogos interativos, oficinas criativas e muito mais. Junte-se a nós e transforme cada
+            celebração em uma festa memorável para os pequenos!</p>
+
+        <img class="carrossel" src="img/banner-1.png" alt="Carrossel">
+    </div>
+  
+
+    <h2 class="nossos-servicos">Nossos Serviços</h2>
+    <div class="atividades-container">
+        <div class="atividade">
+            <h2 class="atividade-titulo">Recreação Infantil</h2>
+            <p class="atividade-descricao">A Recreação Infantil é composta por diversas atividades, tais como: Gincana
+                Infantil, Pintura Facial, Escultura em Balões, Tatuagem, Futebol, Oficinas de Pintura e Desenho.</p>
+            <img class="infantil" src="img/recreacao-infantil.png" alt="Infantil">
+            <a href="index.html">SAIBA MAIS</a>
+        </div>
+
+        <div class="atividade">
+            <h2 class="atividade-titulo">Recreação Teen</h2>
+            <p class="atividade-descricao">Recreação Teen é voltada para crianças na faixa etária de 10 á 14 anos.
+                Realizamos jogos de quadra, atividades, interação em equipe, jogos de raciocínio, jogos de perguntas e
+                respostas, torta na cara, etc.</p>
+            <img class="teen" src="img/recreacao-teen.png" alt="Teen">
+            <a href="index.html">SAIBA MAIS</a>
+        </div>
+
+        <div class="atividade">
+            <h2 class="atividade-titulo">Outras Atividades</h2>
+            <p class="atividade-descricao">Dentro das atividades da recreação infantil, temos também: pintura facial,
+                diversas oficinas, esculturas em balões, tatuagem adesiva, dança, aulas de canto, etc. </p>
+            <img class="outras" src="img/outras-atividades.png" alt="Outras">
+            <a class="link" href="index.html">SAIBA MAIS</a>
+        </div>
+    </div>
+
+    <h2 class="depoimento">Depoimentos</h2>
+    <div class="depoimentos-container">
+        <div class="depoimentos">
+            <h2 class="depoimentos-titulo">Simplesmente Incrivel!</h2>
+            <p class="depoimentos-descricao">Gostaria de expressar minha imensa gratidão ao centro de recreação por
+                oferecer um espaço tão amplo e diversificado para atividades. A infraestrutura é impressionante e
+                proporciona tanto às crianças quanto aos adultos uma experiência de lazer incomparável. A equipe é
+                excepcionalmente atenciosa e profissional, tornando cada visita memorável. Mal posso esperar para
+                explorar mais das muitas opções de diversão e relaxamento que o centro oferece!</p>
+            <img class="cliente-1" src="img/cliente-1.png" alt="Cliente-1">
+        </div>
+
+        <div class="depoimentos">
+            <h2 class="depoimentos-titulo">Gratidão por tudo!</h2>
+            <p class="depoimentos-descricao">Oláááá!!! Só tenho a agradecer pela festa super animada que os recreadores
+                proporcionaram no aniversário da minha filha! ADOREI!! E com certeza estarão presentes na festa do
+                meu outro filho que será em dezembro. Muito obrigada!!!!!szsz</p>
+            <img class="cliente-2" src="img/cliente-2.png" alt="Cliente-2">
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p class="contato">CONTATO</p>
+        <a href="index.html"><img class="instagram" src="icon/instagram.png" alt="Instagram" width="30" height="30"></a>
+        <a href="index.html"><img class="x" src="icon/x.png" alt="X" width="30" height="30"></a>
+        <a href="index.html"><img class="youtube" src="icon/youtube.png" alt="Youtube" width="30" height="30"></a>
+    </footer>
+</body>
+
+</html>

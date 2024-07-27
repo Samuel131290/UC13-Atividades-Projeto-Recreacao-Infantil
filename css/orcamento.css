@@ -1,0 +1,384 @@
+/* Estilos globais */
+body {
+    background-color: #d6dcf8;
+    margin: 0;
+    font-family: 'Comic Sans MS', sans-serif;
+}
+
+.cabecalho {
+    padding: 10px;
+    background-color: #aab0df;
+    margin-bottom: 30px;
+    border: 2px solid #a7add4;
+    position: relative;
+}
+
+.links {
+    font-size: 23px;
+    color: #007bff;
+    position: absolute;
+    top: 20px;
+    right: 0;
+    z-index: 1000;
+}
+
+.links a {
+    margin-right: 50px;
+    color: #007bff;
+}
+
+.title {
+    font-size: 100px;
+    font-weight: bold;
+    margin-top: 0.5%;
+    margin-left: 30%;
+    width: 40%;
+    text-align: center;
+}
+
+.descricao {
+    margin-top: -3%;
+    text-align: center;
+    width: 70%;
+    color: black;
+    font-size: 23px;
+    font-style: italic;
+    margin-left: 15%;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+form {
+    width: 50%;
+    margin: 0 auto;
+    border: 2px solid #a7add4;
+    background-color: #bdc1e0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.column-a {
+    width: 50%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.column-a input[type="text"].nome {
+    width: 120%;
+    padding: 5px;
+}
+
+label.telefone {
+    margin-left: 170px;
+}
+
+.column-a input[type="text"].telefone {
+    width: 50%;
+    padding: 5px;
+    margin-left: 170px;
+}
+
+.column-b {
+    width: 30%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.column-b label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.column-b input[type="text"].endereco {
+    width: 360%;
+    padding: 5px;
+}
+
+.column-b input[type="text"].email {
+    width: 100%;
+    padding: 5px;
+}
+
+label.data {
+    margin-left: 100px;
+}
+
+.column-b input[type="date"].data {
+    width: 50%;
+    padding: 5px;
+    margin-bottom: 10px;
+    margin-left: 100px;
+}
+
+label.idade {
+    margin-left: 97px;
+}
+
+.column-c input[type="text"].idade {
+    width: 60%;
+    padding: 5px;
+    margin-left: 100px;
+}
+
+.observacoes {
+    width: 100%;
+    height: 400px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+label.tipoEvento {
+    margin-top: -3px;
+}
+
+.tipoEvento {
+    width: 55%;
+    padding: 5px;
+}
+
+.row label {
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+    font-size: 20px;
+    position: relative;
+}
+
+label.tipoServico {
+    margin-top: 3px;
+    margin-left: 100px;
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.radio-group input {
+    margin-top: 8px;
+    margin-right: 20px;
+}
+
+.radio-group label {
+    margin-top: -8%;
+    margin-left: 130px;
+}
+
+.btn-solicitar {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 24px;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 40px auto 0;
+}
+
+.btn-solicitar:hover {
+    background-color: #0056b3;
+}
+
+.btn-solicitar:focus {
+    outline: none;
+}
+
+.footer {
+    margin-top: 70px;
+    text-align: center;
+    padding: 1px;
+    background-color: #aab0df;
+    border: 2px solid #a7add4;
+}
+
+.footer .contato {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.footer img {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+/* Media Queries para responsividade */
+@media (max-width: 1200px) {
+    .title {
+        font-size: 80px;
+        margin-left: 20%;
+        width: 60%;
+    }
+
+    .descricao {
+        width: 80%;
+        margin-left: 10%;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    .title {
+        font-size: 60px;
+        margin-left: 10%;
+        width: 80%;
+    }
+
+    .descricao {
+        width: 90%;
+        margin-left: 5%;
+        font-size: 18px;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .column-a, .column-b, .column-c {
+        width: 100%;
+        padding: 0;
+    }
+
+    .column-a input[type="text"].nome,
+    .column-a input[type="text"].telefone,
+    .column-b input[type="text"].endereco,
+    .column-b input[type="text"].email,
+    .column-b input[type="date"].data,
+    .column-c input[type="text"].idade {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo {
+        display: none;
+    }
+
+    .links {
+        font-size: 18px;
+        text-align: center;
+        position: static;
+        margin-top: 1rem;
+    }
+    
+    .links a {
+        margin-right: 1rem;
+    }
+
+    .title {
+        font-size: 50px;
+        text-align: center;
+        width: 100%;
+        margin-left: 0rem;
+    }
+
+    .descricao {
+        font-size: 18px;
+    }
+
+    label.telefone,
+    label.data,
+    label.idade {
+        margin-left: 0px;
+    }
+
+    label.tipoServico {
+        margin-top: 50px;
+        margin-left: 0px;
+    }
+
+    .inputServico {
+        margin-left: -250px;
+    }
+
+    label.teatro,
+    label.brinquedo,
+    label.educativa {
+        margin-left: 30px;
+    }
+
+    form {
+        width: 90%;
+    }
+
+    .btn-solicitar {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .footer {
+        font-size: 18px;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .logo {
+        display: none;
+    }
+
+    .links {
+        font-size: 18px;
+        text-align: center;
+        position: static;
+        margin-top: 1rem;
+    }
+    
+    .links a {
+        margin-right: 1rem;
+    }
+
+    .title {
+        font-size: 50px;
+        text-align: center;
+        width: 100%;
+        margin-left: 0rem;
+    }
+
+    .descricao {
+        font-size: 18px;
+    }
+
+    label.telefone,
+    label.data,
+    label.idade {
+        margin-left: 0px;
+    }
+
+    label.tipoServico {
+        margin-top: 50px;
+        margin-left: 0px;
+    }
+
+    .inputServico {
+        margin-left: -250px;
+    }
+
+    label.teatro,
+    label.brinquedo,
+    label.educativa {
+        margin-left: 30px;
+    }
+
+    form {
+        width: 90%;
+    }
+
+    .btn-solicitar {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .footer {
+        font-size: 18px;
+    }
+}

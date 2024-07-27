@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="css/galeria.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="icon" href="icon/logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="links">
+            <a class="link1" href="index.html">HOME</a>
+            <a class="link2" href="orcamento.html">ORÇAMENTO</a>
+        </div>
+        <img class="logo" src="icon/logo.png" alt="Logo" width="65" height="47">
+    </header>
+
+    <main class="container">
+        <section>
+            <h1 class="title" id="title-colorido">Galeria</h1>
+            <p class="descricao">Explore nossa galeria e mergulhe no mundo encantador do Kids Party! Descubra momentos
+                mágicos capturados durante nossas inúmeras atividades recreativas para crianças e adolescentes. De gincanas animadas a
+                pinturas faciais coloridas, cada imagem conta uma história de alegria e diversão. Navegue pelas fotos e
+                reviva os sorrisos radiantes e as aventuras inesquecíveis que tornam cada celebração conosco tão
+                especial. Prepare-se para se encantar e inspirar!</p>
+        </section>
+
+        <section class="galeria-container">
+            <div class="galeria">
+                <h2 class="galeria-titulo">Momento Mágico 1</h2>
+                <img class="video-item" src="img/galeria-1.png" alt="Imagem" width="350" height="350"
+                    onclick="openModal(this.src)" title="Clique para ampliar">
+            </div>
+            <div class="galeria">
+                <h2 class="galeria-titulo">Momento Mágico 2</h2>
+                <img class="video-item" src="img/galeria-2.png" alt="Imagem" width="350" height="350"
+                    onclick="openModal(this.src)" title="Clique para ampliar">
+            </div>
+            <div class="galeria">
+                <h2 class="galeria-titulo">Momento Mágico 3</h2>
+                <img class="video-item" src="img/galeria-3.png" alt="Imagem" width="350" height="350"
+                    onclick="openModal(this.src)" title="Clique para ampliar">
+            </div>
+            <div class="galeria">
+                <h2 class="galeria-titulo">Momento Mágico 4</h2>
+                <img class="video-item" src="img/galeria-4.png" alt="Imagem" width="350" height="350"
+                    onclick="openModal(this.src)" title="Clique para ampliar">
+            </div>
+        </section>
+
+        <a class="link" href="galeria.html">VER TODAS</a>
+
+        <section class="video-container">
+            <div class="video">
+                <h2 class="video-titulo">Vídeo 1</h2>
+                <img class="clip" src="img/video-1.png" alt="Clip">
+            </div>
+            <div class="video">
+                <h2 class="video-titulo">Vídeo 2</h2>
+                <img class="clip" src="img/video-2.png" alt="Clip">
+            </div>
+        </section>
+
+        <a class="link" href="galeria.html">VER TODOS</a>
+
+        <button onclick="solicitarOrcamento()" class="btn-orcamento">SOLICITAR ORÇAMENTO</button>
+    </main>
+
+    <footer class="footer">
+        <p class="contato">CONTATO</p>
+        <a href="index.html"><img class="instagram" src="icon/instagram.png" alt="Instagram" width="30" height="30"></a>
+        <a href="index.html"><img class="x" src="icon/x.png" alt="X" width="30" height="30"></a>
+        <a href="index.html"><img class="youtube" src="icon/youtube.png" alt="Youtube" width="30" height="30"></a>
+    </footer>
+
+    <div id="modal" class="modal" onclick="closeModal()">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-img">
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const container = document.getElementById('title-colorido');
+            container.innerHTML = container.textContent.replace(/\S/g, "<span>$&</span>");
+        });
+
+        function openModal(src) {
+            document.getElementById("modal").style.display = "block";
+            document.getElementById("modal-img").src = src;
+        }
+
+        function closeModal() {
+            document.getElementById("modal").style.display = "none";
+        }
+
+        function solicitarOrcamento() {
+            window.location.href = "orcamento.html";
+        }
+    </script>
+</body>
+
+</html>

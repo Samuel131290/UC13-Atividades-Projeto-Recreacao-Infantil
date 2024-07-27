@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="css/orcamento.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orçamento</title>
+    <link rel="icon" href="icon/logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="links">
+            <a class="link1" href="index.html">HOME</a>
+            <a class="link2" href="galeria.html">GALERIA</a>
+        </div>
+        <img class="logo" src="icon/logo.png" alt="Logo" width="65" height="47">
+    </header>
+    <div>
+        <h1 class="title" id="title">Orçamento</h1>
+        <div class="descricao">
+            <p>
+                Organizar a festa dos sonhos para o seu filho nunca foi tão fácil! Na nossa página de Orçamento,
+                você pode selecionar os detalhes e opções que melhor atendem às suas necessidades e preferências.
+                Oferecemos uma ampla gama de pacotes e serviços personalizados para tornar cada celebração única e
+                inesquecível.
+            </p>
+            <p>
+                Para começar, preencha nosso formulário com as informações básicas sobre a festa.
+                Em seguida, escolha o tema preferido entre nossas diversas opções
+                divertidas e criativas, que vão desde super-heróis e princesas até festas temáticas de animais e
+                muito mais. Além disso, você pode selecionar uma variedade de serviços adicionais, como animação,
+                recreação, catering, bolos temáticos e lembrancinhas personalizadas.
+            </p>
+            <p>
+                Após enviar suas preferências, nossa equipe entrará em contato para finalizar os detalhes e fornecer
+                um orçamento detalhado e transparente, garantindo que todos os aspectos da festa sejam
+                cuidadosamente planejados para proporcionar uma experiência inesquecível para as crianças e
+                tranquilidade para os pais.
+            </p>
+            <p>
+                Não espere mais para transformar a festa do seu filho em um evento mágico e especial. Solicite seu
+                orçamento agora e comece a planejar uma celebração que ficará na memória de todos!
+            </p>
+        </div>
+    </div>
+    </div>
+
+    <div class="container">
+        <form>
+            <div class="row">
+                <div class="column-a">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" class="nome">
+                </div>
+
+                <div class="column-a">
+                    <label for="telefone" class="telefone">Telefone</label>
+                    <input type="text" id="telefone" name="telefone" class="telefone">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="column-b">
+                    <label for="endereco">Endereço</label>
+                    <input type="text" id="endereco" name="endereco" class="endereco">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="column-b">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" class="email">
+                </div>
+
+                <div class="column-b">
+                    <label for="data" class="data">Data</label>
+                    <input type="date" id="data" name="data" class="data">
+                </div>
+
+                <div class="column-c">
+                    <label for="idade" class="idade" style="font-size: 19px;">Idade dos Convidados (Média)</label>
+                    <input type="text" id="idade" name="idade" class="idade">
+                </div>
+            </div>
+            <div class="row">
+                <div class="column-b">
+                    <label for="tipoEvento"> Tipo de Evento</label>
+                    <select id="tipoEvento" name="tipoEvento" class="tipoEvento">
+                        <option value="aniversario">Aniversário</option>
+                        <option value="gincana">Gincana</option>
+                        <option value="pequenique">Pequenique</option>
+                    </select>
+                </div>
+
+                <div class="column-b">
+                    <label for="tipoServico" class="tipoServico">Tipo de Serviço</label>
+                    <div class="radio-group">
+                        <input type="radio" id="teatro" name="tipoServico" value="teatro" class="inputServico">
+                        <label for="teatro" class="teatro">Teatro</label>
+                        <input type="radio" id="brinquedo" name="tipoServico" value="brinquedo" class="inputServico">
+                        <label for="brinquedo" class="brinquedo">Brinquedo</label>
+                        <input type="radio" id="educativa" name="tipoServico" value="educativa" class="inputServico">
+                        <label for="educativa" class="educativa">Apresentação Educativa</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <label for="observacoes">Observações</label>
+                <textarea id="observacoes" name="observacoes" class="observacoes"></textarea>
+            </div>
+        </form>
+    </div>
+
+    <button class="btn-solicitar">SOLICITAR</button>
+
+    <div class="footer">
+        <p class="contato">CONTATO</p>
+        <a href="index.html"><img class="instagram" src="icon/instagram.png" alt="Instagram" width="30" height="30"></a>
+        <a href="index.html"><img class="x" src="icon/x.png" alt="X" width="30" height="30"></a>
+        <a href="index.html"><img class="youtube" src="icon/youtube.png" alt="Youtube" width="30" height="30"></a>
+    </div>
+</body>
+
+</html>
